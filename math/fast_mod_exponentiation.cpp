@@ -1,3 +1,5 @@
+// Literature: cses.fi/book.pdf
+
 #include <bits/stdc++.h>
 using namespace std;
 

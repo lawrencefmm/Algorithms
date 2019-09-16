@@ -1,3 +1,5 @@
+// Literature : Guide to Competitive Programming - Antti Laaksonen
+
 #include <bits/stdc++.h>
 using namespace std;
 
