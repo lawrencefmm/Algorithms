@@ -52,7 +52,3 @@ void update(int node, int l, int r, int pos, int val)
 		tree[node] = op(tree[LEFT], tree[RIGHT]);
 	}
 }
-int main()
-{
-
-}

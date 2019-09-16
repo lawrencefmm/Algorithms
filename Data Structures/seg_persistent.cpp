@@ -59,8 +59,3 @@ int query(node* cur, int a, int b, int l, int r)
 }
 
 node* ver[100101];
-
-int main()
-{
-
-}

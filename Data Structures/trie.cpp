@@ -37,27 +37,3 @@ bool check(node* trie, string s)
     }
     return at->is_end_of_word;
 }
-
-int main()
-{
-    int n;
-    cin >> n;
-
-    node* trie = new node();
-
-    for(int i = 0; i < n; i++)
-    {
-        string s;
-        cin >> s;
-        insert_word(trie, s);
-    }
-    int q;
-    cin >> q;
-
-    while(q--)
-    {
-        string s;
-        cin >> s;
-        cout << check(trie, s) << "\n";
-    }
-}
