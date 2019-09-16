@@ -24,8 +24,6 @@ ll expo(ll a, ll p, ll m)
 	return t;
 }
 
-ll primes[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
-
 bool check_composite(ll n, ll a, ll d, ll s)
 {
 	ll x = expo(a, d, n);
@@ -38,6 +36,8 @@ bool check_composite(ll n, ll a, ll d, ll s)
     }
 	return true;
 }
+
+ll primes[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
 
 bool MillerRabin(ll n)
 {
@@ -54,6 +54,7 @@ bool MillerRabin(ll n)
 	for(ll p : primes)
 	{
 		int a = 2 + rd() % (n - 3);
+		if(n == p) return true;
 		if(check_composite(n, a, d, s)) return false;
 	}
 	return true;
