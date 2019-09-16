@@ -10,8 +10,3 @@ tuple<int,int,int> gcd(int a, int b) {
         return {y, x - (a/b), g};
     }
 }
-
-int main()
-{
-
-}

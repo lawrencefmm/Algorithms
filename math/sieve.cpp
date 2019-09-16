@@ -14,10 +14,3 @@ void sieve()
             for(long long j = i+i; j*j < MAXN; j+=i)
                 is_composite[j] = true;
 }
-
-int main()
-{
-    sieve();
-
-    for(int i = 0; i < 100; i++) if(is_composite[i] == false) cout << i << " \n"[i == 97];
-}
