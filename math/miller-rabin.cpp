@@ -30,10 +30,10 @@ bool check_composite(ll n, ll a, ll d, ll s)
 	if(x == 1 or x == n - 1) return false;
 	for(int r = 1; r < s; r++)
 	{
-        x = x * x % n;
-        if (x == n - 1)
-            return false;
-    }
+		x = x * x % n;
+		if (x == n - 1)
+        	return false;
+	}
 	return true;
 }
 
