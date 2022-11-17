@@ -6,19 +6,16 @@ vector<int> G[MAXN];
 
 bool vis[MAXN];
 
-void dfs(int x)
-{
+void dfs(int x) {
     vis[x] = true;
     for(int u : G[x]) if(!vis[u]) dfs(u);
 }
 
-void bfs(int x)
-{
+void bfs(int x) {
     queue<int> q;
     q.push(x);
 
-    while(!q.empty())
-    {
+    while(!q.empty()) {
         int v = q.front();
         q.pop();
 
@@ -29,7 +26,3 @@ void bfs(int x)
     }
 }
 
-int main()
-{
-
-}
